@@ -2,67 +2,66 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  name: "Moid Khan",
+  initials: "MK",
+  url: "https://moidrk.com",
+  location: "Karachi, Pakistan",
+  locationLink: "https://www.google.com/maps/place/pakistan",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Product Designer turned Entrepreneur. I build impactful solutions for Founders looking for some serious business.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "At the end of 2021, I quit my job as a product designer to go fulltime freelance & building my own business. In the past, [I pursued a degree in computer science & design](/#education), [completed over 40+ projects on Fiverr (reaching Level 2 & Fiverr Top Choice) before shifting to Upwork (100% JSS & Top Rated) for good](/#hackathons). I had the pleasure of being a part of the multiple businesses from ground up, talking to Founders all over the world. I love what I do and I do what I love.",
   avatarUrl: "/me.png",
   skills: [
-    "React",
+    "Figma",
+    "Framer",
+    "Webflow",
     "Next.js",
     "Typescript",
     "Node.js",
     "Python",
-    "Go",
+    "AWS",
     "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
+    "Docker"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "moid@dkubex.com",
+    tel: "+923161613385",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/moidrk",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://linkedin.com/in/moidrk",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/moidrk",
         icon: Icons.x,
 
         navbar: true,
       },
       Youtube: {
         name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        url: "https://youtube.com/@moiddrk",
         icon: Icons.youtube,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:itsmoidrk@gmail.com",
         icon: Icons.email,
 
         navbar: false,

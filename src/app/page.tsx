@@ -8,27 +8,49 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-
+import { HyperText } from "@/components/ui/hyper-text"
 const BLUR_FADE_DELAY = 0.04;
-
+import { Highlighter } from "@/components/ui/highlighter"
+import { DotPattern } from "@/components/ui/dot-pattern"
+import { cn } from "@/lib/utils"
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 overflow-hidden">
+      <div className="fixed inset-0 -z-10">
+        <DotPattern
+          glow={true}
+          className={cn(
+            "opacity-70 [mask-image:radial-gradient(800px_circle_at_center,white,transparent)]")
+          }
+        />
+      </div>
       <section id="hero">
+        
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
+              <HyperText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+              >
+                {`Hi, I'm ${DATA.name.split(" ")[0]}. `}
+              </HyperText>            
+         <p className="text-lg leading-relaxed">
+  <Highlighter action="underline" color="#FF9800">
+    Product Designer
+  </Highlighter>{" "}
+  turned{" "}
+    Entrepreneur. I build impactful solutions for{" "}
+  <Highlighter action="underline" color="#00C853">
+    Founders
+  </Highlighter>{" "}
+  looking for some{" "}
+  <Highlighter action="highlight" color="#FF9800">
+  $erious business
+  </Highlighter>
+  .
+</p>
+
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
