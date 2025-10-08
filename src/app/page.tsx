@@ -1,6 +1,5 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -15,7 +14,7 @@ import { DotPattern } from "@/components/ui/dot-pattern"
 import { cn } from "@/lib/utils"
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10 overflow-hidden">
+    <main className="flex flex-col min-h-[100dvh] space-y-10">
       <div className="fixed inset-0 -z-10">
         <DotPattern
           glow={true}
@@ -25,7 +24,7 @@ export default function Page() {
         />
       </div>
       <section id="hero">
-        
+
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
@@ -34,22 +33,22 @@ export default function Page() {
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
               >
                 {`Hi, I'm ${DATA.name.split(" ")[0]}. `}
-              </HyperText>            
-         <p className="text-lg leading-relaxed">
-  <Highlighter action="underline" color="#FF9800">
-    Product Designer
-  </Highlighter>{" "}
-  turned{" "}
-    Entrepreneur. I build impactful solutions for{" "}
-  <Highlighter action="underline" color="#00C853">
-    Founders
-  </Highlighter>{" "}
-  looking for some{" "}
-  <Highlighter action="highlight" color="#FF9800">
-  $erious business
-  </Highlighter>
-  .
-</p>
+              </HyperText>
+              <p className="text-lg leading-relaxed">
+                <Highlighter action="underline" color="#FF9800">
+                  Product Designer
+                </Highlighter>{" "}
+                turned{" "}
+                Entrepreneur. I build impactful solutions for{" "}
+                <Highlighter action="underline" color="#00C853">
+                  Founders
+                </Highlighter>{" "}
+                looking for some{" "}
+                <Highlighter action="highlight" color="#FF9800">
+                  $erious business
+                </Highlighter>
+                .
+              </p>
 
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
